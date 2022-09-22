@@ -60,6 +60,7 @@ export default function Services() {
             <ProductsIcons>
               {!screenTablet.matches &&
                 icons.map((icon) => <Image key={icon} src={icon} />)}
+
               {screenTablet.matches &&
                 breakpointTablet.matches &&
                 icons
