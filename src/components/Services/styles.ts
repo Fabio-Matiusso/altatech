@@ -52,7 +52,7 @@ export const Text = styled.p`
 
 export const InferiorCard = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   overflow-x: hidden;
   padding: 0px 30px;

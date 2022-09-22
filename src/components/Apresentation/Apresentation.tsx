@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Icon from '../../assets/logos-altatech/icon-altatech.svg';
 import Fade from 'react-reveal';
 import {
