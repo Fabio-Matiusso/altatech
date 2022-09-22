@@ -4,6 +4,6 @@ export type Props = {
 
 export type Links = {
   items: string[];
-  shop: string;
-  user: string;
+  shop?: string;
+  user?: string;
 }
