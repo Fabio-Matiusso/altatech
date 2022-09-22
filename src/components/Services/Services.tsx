@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import BackupIcon from '../../assets/services/backup.svg';
 import SecurityIcon from '../../assets/services/security.svg';
 import SolutionsIcon from '../../assets/services/solutions.svg';

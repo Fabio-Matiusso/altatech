@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
 import { Props, Links } from './types';
 import { paths } from './Nav';
 import {

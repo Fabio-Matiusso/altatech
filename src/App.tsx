@@ -1,5 +1,6 @@
 import Apresentation from './components/Apresentation/Apresentation';
 import Header from './components/Header/Header';
+import Partners from './components/Partners/Partners';
 import Services from './components/Services/Services';
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Apresentation />
       <Services />
+      <Partners />
     </div>
   );
 }
