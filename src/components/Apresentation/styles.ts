@@ -66,8 +66,9 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   background-color: #203c87;
+  border: none;
   width: 250px;
   padding: 8px;
   border-radius: 8px;
@@ -77,6 +78,20 @@ export const Button = styled.div`
   align-items: center;
   font-weight: 600;
   color: #f4f5f7;
+  cursor: pointer;
+  background-position: center;
+  transition: background 0.5s;
+
+  &:hover {
+    background: #5198C7 radial-gradient(circle, transparent 1%, #5198C7 1%) center/15000%;
+    font-weight: 700;
+  }
+
+  &:active {
+    background-color: #203C87;
+    background-size: 100%;
+    transition: background 0s;
+  }
 
   @media (max-width: 1200px) {
     font-size: 1.125rem;
