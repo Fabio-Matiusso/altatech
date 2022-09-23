@@ -1,5 +1,6 @@
 import Apresentation from './components/Apresentation/Apresentation';
 import Depositions from './components/Depositions/Depositions';
+import Form from './components/Form/Form';
 import Header from './components/Header/Header';
 import Newsletter from './components/Newsletter/Newsletter';
 import Partners from './components/Partners/Partners';
@@ -14,6 +15,7 @@ export default function App() {
       <Partners />
       <Depositions />
       <Newsletter />
+      <Form />
     </div>
   );
 }

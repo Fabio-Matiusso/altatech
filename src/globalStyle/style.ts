@@ -10,5 +10,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body{
     background: #F4F5F7;
+    color: #222;
   }
 `;

@@ -18,11 +18,15 @@ export const Question = styled.div`
   @media (max-width: 900px) {
     display: none;
   }
+
+  
 `;
 
 export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 400;
+
+  
 `;
 
 export const Icon = styled.img`
@@ -102,5 +106,6 @@ export const HiddenTitle = styled.h1`
 
   @media (max-width: 600px) {
     font-size: 2.5rem;
+    padding: 40px;
   }
 `;
