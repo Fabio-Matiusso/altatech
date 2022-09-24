@@ -15,6 +15,8 @@ import {
   InputCnpjAndTel,
   TextArea,
 } from './styles';
+import { mask, unMask } from 'remask';
+import { ChangeEvent, useState } from 'react';
 
 interface FormProps {
   name: string;
@@ -43,6 +45,8 @@ const formSchema = Yup.object().shape({
   message: Yup.string().required('Digite sua mensagem'),
 });
 
+console.log(mask('0000000000001-00', ['00.000.000/0001-00']));
+
 export default function Form() {
   const {
     register,
@@ -55,6 +59,10 @@ export default function Form() {
   const onSubmit = (data: FormProps) => {
     alert(JSON.stringify(data));
   };
+
+  const [cnpj, setCnpj] = useState<string>('');
+
+  const [phone, setPhone] = useState<string>('');
 
   return (
     <Container>
@@ -70,10 +78,29 @@ export default function Form() {
         <InputStyled {...register('name')} placeholder="Nome completo" />
         <Error>{errors.name?.message}</Error>
 
-        <InputCnpjAndTel {...register('cnpj')} placeholder="CNPJ" />
+        <InputCnpjAndTel
+          {...register('cnpj')}
+          value={cnpj}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setCnpj(mask(unMask(e.target.value), ['99.999.999/9999-99']))
+          }
+          placeholder="CNPJ"
+        />
         <ErrorCnpj>{errors.cnpj?.message}</ErrorCnpj>
 
-        <InputCnpjAndTel {...register('phone')} placeholder="Telefone" />
+        <InputCnpjAndTel
+          {...register('phone')}
+          value={phone}
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setPhone(
+              mask(unMask(e.target.value), [
+                '(99) 9999-9999',
+                '(99) 9 9999-9999',
+              ]),
+            )
+          }
+          placeholder="Telefone"
+        />
         <ErrorTel>{errors.phone?.message}</ErrorTel>
 
         <InputStyled {...register('email')} placeholder="E-mail" />
