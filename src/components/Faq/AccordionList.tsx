@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import {
   Accordion,
   AccordionItem,
@@ -11,13 +10,13 @@ import { questions } from './questions';
 import { Questions } from './types';
 import { Container, Title, Question } from './styles';
 
-
 export default function AccordionList() {
   return (
     <Container>
       <Title>FAQ.</Title>
 
       <Accordion
+        allowMultiple
         defaultIndex={[0]}
         width="80%"
         margin="0 auto"
@@ -26,7 +25,7 @@ export default function AccordionList() {
         gridColumn="span 12"
       >
         {questions.map(({ title, answer }: Questions) => (
-          <AccordionItem style={{ borderRadius: '8px', border: 'none' }}>
+          <AccordionItem borderRadius="8px" border="none">
             <Question>
               <AccordionButton>
                 <Box flex="1" textAlign="left" fontSize="1.5rem">

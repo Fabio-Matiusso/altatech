@@ -6,14 +6,8 @@ export const Box = styled.div`
   grid-template-columns: repeat(12, minmax(0, 1fr));
   align-content: center;
   padding-top: 180px;
+  padding: calc(8px + 1.5625vw);
 
-  @media (max-width: 600px){
-    padding-top: 380px;
-  }
-
-  @media (max-width: 400px){
-    padding-top: 600px;
-  }
 `
 
 export const Container = styled.section`
@@ -26,10 +20,6 @@ export const Container = styled.section`
   background-color: #eff0f2;
   align-content: center;
   justify-items: center;
- 
-  @media (max-width: 600px) {
-
-  }
 `;
 
 export const CallToAction = styled.div`

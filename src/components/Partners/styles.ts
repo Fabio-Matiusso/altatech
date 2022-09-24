@@ -7,10 +7,11 @@ export const Container = styled.article`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  padding: calc(8px + 1.5625vw);
+
 `;
 
 export const Title = styled.h1`
@@ -37,28 +38,6 @@ export const IconCard = styled.div<Even>`
 export const Image = styled.img`
   max-width: 100%;
   margin: 0 auto;
-`;
-
-export const PartnerName = styled.div`
-  color: #222222;
-  font-size: 2rem;
-  font-weight: 500;
-  background-color: #fff;
-  width: 100%;
-  height: 20%;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 900px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 1rem;
-  }
 `;
 
 export const BoxCarousel = styled.div`

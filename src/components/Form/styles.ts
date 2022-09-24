@@ -5,10 +5,9 @@ export const Container = styled.section`
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: auto 100px;
   gap: 20px;
-  height: 100vh;
   align-content: center;
+  padding: calc(8px + 1.5625vw);
 `;
 
 export const CallToAction = styled.div`
@@ -35,13 +34,11 @@ export const FormContainer = styled.form`
   align-items: center;
   grid-column: span 12;
   gap: 15px;
-  height: 300px;
   max-width: 100%;
 
   @media (max-width: 600px){
     display: flex;
     flex-direction: column;
-    height: 600px;
   }
 `;
 
@@ -134,7 +131,6 @@ export const InputCnpjAndTel = styled.input`
   border-radius: 8px;
   outline: none;
   border: none;
-  max-height: 40px;
   font-size: 1.1rem;
   padding: 8px 10px;
   grid-column: span 6;
@@ -154,13 +150,11 @@ export const TextArea = styled.textarea`
   padding: 8px 10px;
   font-size: 1.1rem;
   border-radius: 10px;
-  height: 200px;
   margin-top: 5px;
   resize: none;
 
   @media (max-width: 600px) {
     width: 100%;
-    height: 300px;
   }
 `;
 

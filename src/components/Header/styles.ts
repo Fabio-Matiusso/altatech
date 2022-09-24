@@ -9,6 +9,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   background-color: #203c87;
   color: #f4f5f7;
+  padding: calc(8px + 1.5625vw);
 `;
 
 // Navegação
@@ -137,7 +138,7 @@ export const Ul = styled.ul<Props>`
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;

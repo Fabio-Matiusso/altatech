@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
-
 export const Container = styled.section`
   width: 80%;
   margin: 0 auto;
-  height: 120vh;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-columns: repeat(1, 1fr);
   align-content: center;
-
-  @media (max-width: 600px) {
-    padding-top: 900px;
-  }
+  padding: calc(8px + 1.5625vw);
 `;
 
 export const Title = styled.h2`

@@ -5,7 +5,7 @@ export const Container = styled.section`
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  height: 100vh;
+  padding: calc(8px + 1.5625vw);
   align-content: center;
 `;
 
@@ -16,11 +16,9 @@ export const Info = styled.div`
   gap: 25px;
   color: #222;
   grid-column: 1 / 8;
-  height: 80%;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    height: 70%;
     justify-content: center;
     gap: 30px;
   }
@@ -46,15 +44,11 @@ export const Description = styled.div`
   flex-direction: column;
   justify-content: start;
   gap: 20px;
-  height: 250px;
 
   span {
     font-weight: 600;
   }
 
-  @media (max-width: 600px) {
-    height: 300px;
-  }
 `;
 
 export const Paragraph = styled.p`
@@ -103,7 +97,6 @@ export const Button = styled.button`
 
   @media (max-width: 600px) {
     width: 180px;
-    height: 40px;
     padding: 15px;
   }
 `;

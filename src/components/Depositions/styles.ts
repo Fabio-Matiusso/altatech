@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 80%;
   margin: 0 auto;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding: calc(8px + 1.5625vw);
 `;
 
 export const Question = styled.div`
@@ -18,15 +18,11 @@ export const Question = styled.div`
   @media (max-width: 900px) {
     display: none;
   }
-
-  
 `;
 
 export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: 400;
-
-  
 `;
 
 export const Icon = styled.img`
@@ -38,6 +34,7 @@ export const ContainerClients = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   grid-column: span 6;
+  gap: 20px;
 
   @media (max-width: 900px) {
     grid-column: span 12;

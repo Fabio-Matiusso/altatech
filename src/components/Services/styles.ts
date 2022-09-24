@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding: calc(8px + 1.5625vw);
 `;
 
 export const Title = styled.h1`
@@ -17,7 +18,6 @@ export const Title = styled.h1`
 
 export const SuperiorCard = styled.div`
   display: flex;
-  height: 250px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -27,13 +27,20 @@ export const SuperiorCard = styled.div`
   padding: 10px;
   
 
-@media (max-width: 900px) {
-  grid-column: span 6;
-}
+  @media (max-width: 900px) {
+    grid-column: span 6;
+  }
+
+  @media (max-width: 600px) {
+    grid-column: span 12;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 `;
 
 export const Image = styled.img`
-max-width: 100px;
+  max-width: 100px;
 `;
 
 export const Text = styled.p`
@@ -64,7 +71,8 @@ export const InferiorCard = styled.div`
   height: 120px;
 
 @media (max-width: 600px) {
-  overflow-x: hidden;
+  justify-content: space-evenly;
+  word-wrap: break-word;
 }
 `;
 

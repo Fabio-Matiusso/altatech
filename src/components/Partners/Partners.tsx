@@ -1,15 +1,7 @@
 import Carousel from 'nuka-carousel/lib/carousel';
 import { useState } from 'react';
 import { emprises } from './datas';
-import {
-  Container,
-  Title,
-  Card,
-  IconCard,
-  Image,
-  PartnerName,
-  BoxCarousel,
-} from './styles';
+import { Container, Title, Card, IconCard, Image, BoxCarousel } from './styles';
 import { Even, Emprises } from './types';
 
 const screen = window.matchMedia('(max-width: 900px)');

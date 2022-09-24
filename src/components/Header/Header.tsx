@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import Nav from './Nav';
 import { HeaderStyled } from './styles';
 
