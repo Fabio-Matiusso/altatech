@@ -1,34 +1,35 @@
 import styled from "styled-components";
 
+
+export const Box = styled.div`
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-content: center;
+  padding-top: 180px;
+
+  @media (max-width: 600px){
+    padding-top: 380px;
+  }
+
+  @media (max-width: 400px){
+    padding-top: 600px;
+  }
+`
+
 export const Container = styled.section`
   width: 80%;
   margin: 0 auto;
   display: grid;
+  grid-column: span 12;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   padding: 15px;
   background-color: #eff0f2;
-  height: 300px;
   align-content: center;
-  margin-top: 140px;
-
-  @media (max-width: 900px) {
-    height: 200px;
-    margin-top: 50px;
-  }
-
+  justify-items: center;
+ 
   @media (max-width: 600px) {
-    margin-top: 150px;
-    height: 300px;
-    align-items: center;
+
   }
-
-  @media (max-width: 500px) {
-    margin-top: 250px;
-    height: 300px;
-    align-items: center;
-  }
-
-
 `;
 
 export const CallToAction = styled.div`
@@ -77,7 +78,7 @@ export const MailImage = styled.img`
 
 export const Form = styled.form`
   width: 100%;
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 10px;
 `
@@ -98,6 +99,7 @@ export const Input = styled.input`
 
   @media (max-width: 600px){
     font-size: 0.8rem;
+    width: 100%;
   }
 `;
 

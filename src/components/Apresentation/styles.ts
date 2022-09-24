@@ -37,7 +37,7 @@ export const Title = styled.h1`
     font-size: 3rem;
   }
   @media (max-width: 600px) {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 `;
 
@@ -63,6 +63,10 @@ export const Paragraph = styled.p`
 
   @media (max-width: 1200px) {
     font-size: 1.225rem;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
   }
 `;
 

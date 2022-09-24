@@ -12,6 +12,7 @@ export const Title = styled.h1`
   font-weight: 500;
   text-align: center;
   grid-column: 1 / -1;
+  font-size: 2rem;
 `;
 
 export const SuperiorCard = styled.div`
@@ -24,6 +25,7 @@ export const SuperiorCard = styled.div`
   border-radius: 30px;
   grid-column: span 3;
   padding: 10px;
+  
 
 @media (max-width: 900px) {
   grid-column: span 6;

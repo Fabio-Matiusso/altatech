@@ -12,6 +12,8 @@ import {
 } from './styles';
 import { Even, Emprises } from './types';
 
+const screen = window.matchMedia('(max-width: 900px)');
+
 export default function Partners() {
   const [even, setEven] = useState<boolean>(false);
 
@@ -20,10 +22,10 @@ export default function Partners() {
       <Title>Parceiros</Title>
       <BoxCarousel style={{ maxWidth: '100%' }}>
         <Carousel
-          slidesToShow={4}
+          slidesToShow={screen.matches ? 2 : 4}
           wrapAround={true}
           autoplay={true}
-          autoplayInterval={1500}
+          autoplayInterval={1000}
           cellSpacing={8}
         >
           {emprises.map(({ photo }: Emprises, index) => (
