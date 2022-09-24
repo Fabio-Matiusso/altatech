@@ -45,8 +45,6 @@ const formSchema = Yup.object().shape({
   message: Yup.string().required('Digite sua mensagem'),
 });
 
-console.log(mask('0000000000001-00', ['00.000.000/0001-00']));
-
 export default function Form() {
   const {
     register,

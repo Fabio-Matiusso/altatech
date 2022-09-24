@@ -7,6 +7,9 @@ export const Container = styled.section`
   grid-template-columns: repeat(12, minmax(0, 1fr));
   padding: 15px;
   background-color: #eff0f2;
+  height: 300px;
+  align-content: center;
+  margin-top: 140px;
 
   @media (max-width: 900px) {
     height: 200px;
@@ -15,6 +18,12 @@ export const Container = styled.section`
 
   @media (max-width: 600px) {
     margin-top: 150px;
+    height: 300px;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 250px;
     height: 300px;
     align-items: center;
   }
@@ -66,6 +75,13 @@ export const MailImage = styled.img`
   }
 `;
 
+export const Form = styled.form`
+  width: 100%;
+   display: flex;
+  flex-direction: column;
+  gap: 10px;
+`
+
 export const Input = styled.input`
   background-color: #f4f5f7;
   border-radius: 5px;
@@ -74,6 +90,7 @@ export const Input = styled.input`
   font-size: 1rem;
   max-width: 80%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
 
   &:focus {
     outline: none;
