@@ -45,6 +45,7 @@ export const FormContainer = styled.form`
   }
 `;
 
+
 export const Button = styled.button`
   background-color: #203c87;
   border: none;
@@ -75,10 +76,6 @@ export const Button = styled.button`
     transition: background 0s;
   }
 `;
-
-// export const ContainerInput = styled.div`
-//   padding: 15px;
-// `;
 
 export const Error = styled.div`
   color: red;
@@ -115,3 +112,55 @@ export const ErrorCnpj = styled.div`
     width: 100%;
   }
 `;
+
+export const InputStyled = styled.input`
+  grid-column: span 12;
+  background: #f4f5f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 8px 10px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const InputCnpjAndTel = styled.input`
+  background: #f4f5f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  max-height: 40px;
+  font-size: 1.1rem;
+  padding: 8px 10px;
+  grid-column: span 6;
+  max-width: 100%;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
+export const TextArea = styled.textarea`
+  grid-column: span 12;
+  background: #f4f5f7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  border: none;
+  padding: 8px 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  height: 200px;
+  margin-top: 5px;
+  resize: none;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    height: 300px;
+  }
+`;
+
