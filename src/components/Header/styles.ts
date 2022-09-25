@@ -14,7 +14,6 @@ export const HeaderStyled = styled.header`
 
 // Navegação
 export const NavStyled = styled.nav`
-  padding: 0 20px;
   display: flex;
   color: white;
   list-style: none;
@@ -29,7 +28,7 @@ export const NavStyled = styled.nav`
 
 export const Box = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 export const List = styled.ul`
@@ -86,6 +85,7 @@ export const ContainerIcons = styled.div`
 export const Icon = styled.img`
   width: 30px;
   height: 30px;
+  cursor: pointer;
 `;
 
 // Menu Hamburguer
@@ -140,7 +140,6 @@ export const Ul = styled.ul<Props>`
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
-    /* height: 100vh; */
     width: 100%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
@@ -174,6 +173,7 @@ export const ContainerIcon = styled.div`
 export const MobileIcon = styled.img`
   width: 50px;
   height: 50px;
+  cursor: pointer;
 `;
 
 export const DatasAltatech = styled.div`

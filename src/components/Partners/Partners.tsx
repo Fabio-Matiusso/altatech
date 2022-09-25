@@ -17,6 +17,22 @@ export default function Partners() {
           autoplay={true}
           autoplayInterval={1000}
           cellSpacing={8}
+          defaultControlsConfig={{
+            nextButtonStyle: {
+              padding: '20px',
+              position: 'absolute',
+              top: '90px',
+              right: '-60px'
+            },
+            prevButtonStyle: {
+              padding: '20px',
+              position: 'absolute',
+              top: '90px',
+              left: '-60px',
+            },
+            nextButtonText: '🡢',
+            prevButtonText: '🡠',
+          }}
         >
           {photos.map((photo, index) => (
             <Card key={photo}>

@@ -35,6 +35,7 @@ export const SuperiorCard = styled.div`
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
+    border-radius: 15px;
   }
 `;
 
