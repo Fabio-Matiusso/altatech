@@ -44,7 +44,6 @@ cd nome-da-pasta-gerada
 yarn 
 
 # Rodar a aplicação
-
 yarn start
 
 # O servidor com o projeto irá rodar na porta:3000, caso o projeto não abra automaticamente após executar o comando acima, acesse http://localhost:3000 em seu navegador
