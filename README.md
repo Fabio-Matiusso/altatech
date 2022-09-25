@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+<div align = "center">
+    <h1>Altatech Soluções em Tecnologia Ltda</h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+<br>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias utilizadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [x] React.js
+- [x] React-hook-form
+- [x] React Reveal
+- [x] Typescript
+- [x] Styled-components
+- [x] Nuka Carousel
+- [x] Yup
+- [x] Chakra UI
 
-### `yarn test`
+## Rodando a aplicação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Para rodar a aplicação, você irá precisar das seguintes ferramentas instaladas em sua máquina
+- [GIT](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/)
 
-### `yarn build`
+```bash
+# Abra o terminal do seu computador 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Crie uma pasta para clonar o projeto
+mkdir pasta-teste-pratico
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Acesse essa pasta com o seguinte comando 
+cd pasta-teste-pratico
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Clone o repositório dentro da pasta que você criou
+git clone git@github.com:Fabio-Matiusso/altatech.git
 
-### `yarn eject`
+# Acesse o projeto
+cd nome-da-pasta-gerada
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Instale as dependências rodando o seguinte comando e apertando enter
+yarn 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Rodar a aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+yarn start
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# O servidor com o projeto irá rodar na porta:3000, caso o projeto não abra automaticamente após executar o comando acima, acesse http://localhost:3000 em seu navegador
+```
