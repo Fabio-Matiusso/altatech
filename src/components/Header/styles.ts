@@ -7,7 +7,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #203c87;
+  background-color: #213b89;
   color: #f4f5f7;
   padding: calc(8px + 1.5625vw);
 `;
@@ -134,7 +134,7 @@ export const Ul = styled.ul<Props>`
   @media (max-width: 768px) {
     display: block;
     flex-flow: column nowrap;
-    background-color: #203c87;
+    background-color: #213b89;
     justify-content: start;
     position: fixed;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};

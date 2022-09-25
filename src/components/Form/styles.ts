@@ -43,7 +43,7 @@ export const FormContainer = styled.form`
 `;
 
 export const Button = styled.button`
-  background-color: #203c87;
+  background-color: #213b89;
   border: none;
   width: 300px;
   padding: 10px 0px;
@@ -67,7 +67,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    background-color: #203c87;
+    background-color: #213b89;
     background-size: 100%;
     transition: background 0s;
   }

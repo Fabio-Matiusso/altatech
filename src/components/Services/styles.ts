@@ -21,7 +21,7 @@ export const SuperiorCard = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  background-color: #203c87;
+  background-color: #213b89;
   border-radius: 30px;
   grid-column: span 3;
   padding: 10px;
@@ -65,7 +65,7 @@ export const InferiorCard = styled.div`
   overflow-x: hidden;
   padding: 0px 30px;
   grid-column: span 12;
-  background-color: #203c87;
+  background-color: #213b89;
   border-radius: 15px;
   height: 120px;
 

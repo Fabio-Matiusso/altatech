@@ -64,7 +64,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Button = styled.button`
-  background-color: #203c87;
+  background-color: #213b89;
   border: none;
   width: 250px;
   padding: 8px;
@@ -86,7 +86,7 @@ export const Button = styled.button`
   }
 
   &:active {
-    background-color: #203c87;
+    background-color: #213b89;
     background-size: 100%;
     transition: background 0s;
   }
@@ -106,6 +106,7 @@ export const ContainerLogo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
   @media (max-width: 900px) {
     display: none;
   }
@@ -116,4 +117,5 @@ export const Logo = styled.img`
   grid-column: 9 / 12;
   align-self: baseline;
   display: block;
+  align-self: flex-end;
 `;
