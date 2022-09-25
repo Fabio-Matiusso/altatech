@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Box = styled.div`
   display: grid;
@@ -7,8 +6,7 @@ export const Box = styled.div`
   align-content: center;
   padding-top: 180px;
   padding: calc(8px + 1.5625vw);
-
-`
+`;
 
 export const Container = styled.section`
   width: 80%;
@@ -71,7 +69,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
-`
+`;
 
 export const Input = styled.input`
   background-color: #f4f5f7;
@@ -87,7 +85,7 @@ export const Input = styled.input`
     outline: none;
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.8rem;
     width: 100%;
   }

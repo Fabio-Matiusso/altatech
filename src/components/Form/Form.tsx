@@ -17,33 +17,8 @@ import {
 } from './styles';
 import { mask, unMask } from 'remask';
 import { ChangeEvent, useState } from 'react';
-
-interface FormProps {
-  name: string;
-  cnpj: string;
-  phone: string;
-  email: string;
-  message: string;
-}
-
-const formSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(1, 'O nome deve conter, pelo menos, um caractere')
-    .required('Preencha seu nome completo'),
-
-  cnpj: Yup.string()
-    .min(14, 'O CNPJ deve conter 14 dígitos')
-    .required('Preencha seu CNPJ'),
-
-  phone: Yup.string()
-    .required('Preencha seu telefone')
-    .min(8, 'O telefone deve ter, no mínimo, 8 números'),
-
-  email: Yup.string()
-    .email('Insira um e-mail válido')
-    .required('Preencha seu E-mail'),
-  message: Yup.string().required('Digite sua mensagem'),
-});
+import { formSchema } from '../../constants/constants';
+import { FormProps } from './types';
 
 export default function Form() {
   const {

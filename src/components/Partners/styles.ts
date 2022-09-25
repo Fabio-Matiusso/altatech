@@ -1,6 +1,5 @@
-import styled from "styled-components";
-import { Even } from "./types";
-
+import styled from 'styled-components';
+import { Even } from './types';
 
 export const Container = styled.article`
   width: 80%;
@@ -11,7 +10,6 @@ export const Container = styled.article`
   justify-content: center;
   gap: 50px;
   padding: calc(8px + 1.5625vw);
-
 `;
 
 export const Title = styled.h1`

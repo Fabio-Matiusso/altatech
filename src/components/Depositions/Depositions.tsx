@@ -14,7 +14,7 @@ import {
   TextClientInfos,
   HiddenTitle,
 } from './styles';
-import { clients } from './datas';
+import { clients } from '../../constants/constants';
 
 export default function Depositions() {
   return (

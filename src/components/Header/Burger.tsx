@@ -1,7 +1,5 @@
-import styled from 'styled-components';
 import React, { useState } from 'react';
 import RightNav from './RightNav';
-import { Props } from './types';
 import { StyledBurger } from './styles';
 
 export default function Burger() {

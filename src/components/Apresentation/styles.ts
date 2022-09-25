@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 80%;
@@ -48,7 +48,6 @@ export const Description = styled.div`
   span {
     font-weight: 600;
   }
-
 `;
 
 export const Paragraph = styled.p`
@@ -81,12 +80,13 @@ export const Button = styled.button`
   transition: background 0.5s;
 
   &:hover {
-    background: #5198C7 radial-gradient(circle, transparent 1%, #5198C7 1%) center/15000%;
+    background: #5198c7 radial-gradient(circle, transparent 1%, #5198c7 1%)
+      center/15000%;
     font-weight: 700;
   }
 
   &:active {
-    background-color: #203C87;
+    background-color: #203c87;
     background-size: 100%;
     transition: background 0s;
   }

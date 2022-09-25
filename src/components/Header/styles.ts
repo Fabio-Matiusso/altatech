@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Props } from "./types";
+import styled from 'styled-components';
+import { Props } from './types';
 
 // Header
 export const HeaderStyled = styled.header`

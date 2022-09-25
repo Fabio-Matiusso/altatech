@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 80%;
@@ -36,12 +36,11 @@ export const FormContainer = styled.form`
   gap: 15px;
   max-width: 100%;
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
   }
 `;
-
 
 export const Button = styled.button`
   background-color: #203c87;
@@ -79,7 +78,7 @@ export const Error = styled.div`
   padding-left: 10px;
   grid-column: span 12;
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -92,7 +91,7 @@ export const ErrorTel = styled.div`
   grid-column: span 6;
   padding-left: 10px;
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -105,7 +104,7 @@ export const ErrorCnpj = styled.div`
   grid-column: span 6;
   padding-left: 10px;
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -157,4 +156,3 @@ export const TextArea = styled.textarea`
     width: 100%;
   }
 `;
-

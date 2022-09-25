@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { paths } from '../../constants/constants';
 import { Props, Links } from './types';
-import { paths } from './Nav';
 import {
   Ul,
   LiStyled,

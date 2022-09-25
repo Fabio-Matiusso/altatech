@@ -6,7 +6,7 @@ import {
   AccordionIcon,
   Box,
 } from '@chakra-ui/react';
-import { questions } from './questions';
+import { questions } from '../../constants/constants';
 import { Questions } from './types';
 import { Container, Title, Question } from './styles';
 

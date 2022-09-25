@@ -15,16 +15,10 @@ import { Error } from '../Form/styles';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
+import { EmailProps } from './types';
+import { formSchemaNewsletter } from '../../constants/constants';
 
-interface EmailProps {
-  email: string;
-}
 
-const formSchema = Yup.object().shape({
-  email: Yup.string()
-    .email('Insira um e-mail válido')
-    .required('Preencha seu E-mail'),
-});
 
 export default function Newsletter() {
   const [email, setEmail] = useState<string>('');
@@ -34,7 +28,7 @@ export default function Newsletter() {
     handleSubmit,
     formState: { errors },
   } = useForm<EmailProps>({
-    resolver: yupResolver(formSchema),
+    resolver: yupResolver(formSchemaNewsletter),
   });
 
   const handleMailValue = (e: ChangeEvent<HTMLInputElement>) => {

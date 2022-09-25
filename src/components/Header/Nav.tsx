@@ -1,9 +1,7 @@
-import styled from 'styled-components';
 import Burger from './Burger';
 import Logo from '../../assets/logos-altatech/logo-altatech.svg';
-import { Props, Links } from './types';
-import ShopIcon from '../../assets/icons/shop.svg';
-import UserIcon from '../../assets/icons/user.svg';
+import { Links } from './types';
+import { paths } from '../../constants/constants';
 import React from 'react';
 import {
   NavStyled,
@@ -16,14 +14,6 @@ import {
   ContainerIcons,
   Icon,
 } from './styles';
-
-export const paths: Links[] = [
-  {
-    items: ['Produtos', 'Serviços', 'Locação', 'Cloud'],
-    shop: ShopIcon,
-    user: UserIcon,
-  },
-];
 
 export default function Nav() {
   return (

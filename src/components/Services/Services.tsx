@@ -17,14 +17,12 @@ import {
   InferiorCard,
   ProductsIcons,
 } from './styles';
-
-const screenTablet = window.matchMedia('(max-width: 900px)');
-
-const breakpointTablet = window.matchMedia('(min-width: 600px)');
-
-const screenSmartphone = window.matchMedia('(max-width: 600px)');
-
-const breakpointSmartphone = window.matchMedia('(min-width: 300px)');
+import {
+  screenTablet,
+  breakpointTablet,
+  screenSmartphone,
+  breakpointSmartphone,
+} from '../../constants/constants';
 
 export default function Services() {
   const services: weOffer[] = [

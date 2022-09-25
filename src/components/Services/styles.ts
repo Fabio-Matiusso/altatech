@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 80%;
@@ -25,7 +25,6 @@ export const SuperiorCard = styled.div`
   border-radius: 30px;
   grid-column: span 3;
   padding: 10px;
-  
 
   @media (max-width: 900px) {
     grid-column: span 6;
@@ -50,13 +49,13 @@ export const Text = styled.p`
   line-height: 44px;
   color: #f4f5f7;
 
-@media (max-width: 1200px) {
-  font-size: 1.3rem;
-}
+  @media (max-width: 1200px) {
+    font-size: 1.3rem;
+  }
 
-@media (max-width: 600px) {
-  font-size: 1.1rem;
-}
+  @media (max-width: 600px) {
+    font-size: 1.1rem;
+  }
 `;
 
 export const InferiorCard = styled.div`
@@ -70,10 +69,10 @@ export const InferiorCard = styled.div`
   border-radius: 15px;
   height: 120px;
 
-@media (max-width: 600px) {
-  justify-content: space-evenly;
-  word-wrap: break-word;
-}
+  @media (max-width: 600px) {
+    justify-content: space-evenly;
+    word-wrap: break-word;
+  }
 `;
 
 export const ProductsIcons = styled.div`
