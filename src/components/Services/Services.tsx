@@ -1,12 +1,6 @@
 import React from 'react';
-import BackupIcon from '../../assets/services/backup.svg';
-import SecurityIcon from '../../assets/services/security.svg';
-import SolutionsIcon from '../../assets/services/solutions.svg';
-import StructureIcon from '../../assets/services/structure.svg';
 import WebCamIcon from '../../assets/services/products/webcam.svg';
-import PrinterIcon from '../../assets/services/products/printer.svg';
 import ComputerIcon from '../../assets/services/products/computer.svg';
-import AdobeIcon from '../../assets/services/products/adobe.svg';
 import { weOffer, Products } from './types';
 import {
   Container,
@@ -23,22 +17,9 @@ import {
   screenSmartphone,
   breakpointSmartphone,
 } from '../../constants/constants';
+import { services, products } from '../../constants/constants';
 
 export default function Services() {
-  const services: weOffer[] = [
-    { service: 'Backup em Nuvem', icon: BackupIcon },
-    { service: 'Infraestrutura', icon: StructureIcon },
-    { service: 'Segurança em T.I', icon: SecurityIcon },
-    { service: 'Soluções em T.I', icon: SolutionsIcon },
-  ];
-
-  const products: Products[] = [
-    {
-      service: 'Produtos e Softwares',
-      icons: [WebCamIcon, ComputerIcon, PrinterIcon, AdobeIcon],
-    },
-  ];
-
   return (
     <Container>
       <Title>Conheça nossos serviços!</Title>

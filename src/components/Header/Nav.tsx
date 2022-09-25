@@ -27,7 +27,7 @@ export default function Nav() {
             <React.Fragment>
               <List>
                 {items.map((item) => (
-                  <ListItem>{item}</ListItem>
+                  <ListItem key={item}>{item}</ListItem>
                 ))}
               </List>
 

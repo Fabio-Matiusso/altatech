@@ -24,8 +24,8 @@ export default function AccordionList() {
         border="none"
         gridColumn="span 12"
       >
-        {questions.map(({ title, answer }: Questions) => (
-          <AccordionItem borderRadius="8px" border="none">
+        {questions.map(({ title, answer, key }: Questions) => (
+          <AccordionItem key={key} borderRadius="8px" border="none">
             <Question>
               <AccordionButton>
                 <Box flex="1" textAlign="left" fontSize="1.5rem">

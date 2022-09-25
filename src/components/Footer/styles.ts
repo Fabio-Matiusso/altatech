@@ -40,11 +40,13 @@ export const Title = styled.h3`
 
 export const Item = styled.p`
   font-size: 1rem;
+  cursor: pointer;
 `;
 
 export const Medias = styled.div`
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`

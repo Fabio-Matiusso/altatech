@@ -26,8 +26,8 @@ export default function Depositions() {
       </Question>
 
       <ContainerClients>
-        {clients.map((client) => (
-          <Fade right cascade>
+        {clients.map((client, index) => (
+          <Fade right cascade key={index}>
             <ClientCard>
               <Paragraph>{client.deposition}</Paragraph>
               <ClientInfos>

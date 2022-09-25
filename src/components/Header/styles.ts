@@ -49,6 +49,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export const ContainerImage = styled.div`
@@ -64,6 +65,7 @@ export const ContainerImage = styled.div`
 
 export const Image = styled.img`
   width: 150px;
+  cursor: pointer;
 `;
 
 export const Container = styled.div`

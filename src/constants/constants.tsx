@@ -34,6 +34,14 @@ import YoutubeIcon from '../assets/icons/youtube.svg';
 import InstagramIcon from '../assets/icons/instagram.svg';
 import { FooterTypes } from '../components/Footer/types';
 import { weOffer, Products } from '../components/Services/types';
+import BackupIcon from '../assets/services/backup.svg';
+import SecurityIcon from '../assets/services/security.svg';
+import SolutionsIcon from '../assets/services/solutions.svg';
+import StructureIcon from '../assets/services/structure.svg';
+import PrinterIcon from '../assets/services/products/printer.svg';
+import AdobeIcon from '../assets/services/products/adobe.svg';
+import WebCamIcon from '../assets/services/products/webcam.svg';
+import ComputerIcon from '../assets/services/products/computer.svg';
 
 export const paths: Links[] = [
   {
@@ -71,39 +79,47 @@ export const questions: Questions[] = [
   {
     title: 'A Altatech é uma distribuidora?',
     answer: 'Não, somos uma revendedora com atuação nacional.',
+    key: 'item1',
   },
   {
     title: 'A Altatech tem loja física?',
     answer:
       'A Matriz é sediada em Londrina-Pr há 18 anos. Obtenha maiores detalhes pelo nosso telefone: (11) 4063-1002',
+    key: 'item2',
   },
   {
     title: 'A Altatech trabalha com licitações?',
     answer: 'Não atendemos as licitações',
+    key: 'item3',
   },
   {
     title: 'Os preços são iguais para todos os estados?',
     answer:
       'Existe uma pequena variação baseada na alíquota de impostos que cada estado pratica.',
+    key: 'item4',
   },
   {
     title: 'Possui valor mínimo para compra?',
     answer:
       'Consulte nossos consultores comerciais e obtenha mais informações.',
+    key: 'item5',
   },
   {
     title: 'Qual é a forma de pagamento?',
     answer:
       'À vista - deposito ou boleto bancário | A prazo - Boleto bancário, cartão BNDS, cartão de credito e financiamento bancário.',
+    key: 'item6',
   },
   {
     title: 'Qual é prazo de entrega?',
     answer:
       'Após o faturamento do pedido de compra, de 3 a 12 dias dependendo do estado.',
+    key: 'item7',
   },
   {
     title: 'Vende para pessoa física?',
     answer: 'Sim, somente com pagamento à vista e antecipado.',
+    key: 'item8',
   },
 ];
 
@@ -157,6 +173,20 @@ export const photos: string[] = [
   Tcl,
   Western,
   TpLink,
+];
+
+export const services: weOffer[] = [
+  { service: 'Backup em Nuvem', icon: BackupIcon },
+  { service: 'Infraestrutura', icon: StructureIcon },
+  { service: 'Segurança em T.I', icon: SecurityIcon },
+  { service: 'Soluções em T.I', icon: SolutionsIcon },
+];
+
+export const products: Products[] = [
+  {
+    service: 'Produtos e Softwares',
+    icons: [WebCamIcon, ComputerIcon, PrinterIcon, AdobeIcon],
+  },
 ];
 
 export const footer: FooterTypes[] = [
