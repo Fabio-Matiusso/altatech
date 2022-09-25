@@ -19,9 +19,9 @@
 - [x] Yup
 - [x] Chakra UI
 
-## Rodando a aplicação
+# Rodando a aplicação
 
-# Para rodar a aplicação, você irá precisar das seguintes ferramentas instaladas em sua máquina
+## Para rodar a aplicação, você irá precisar das seguintes ferramentas instaladas em sua máquina
 - [GIT](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en/)
 
