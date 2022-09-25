@@ -3,6 +3,11 @@ import { Props } from './types';
 
 // Header
 export const HeaderStyled = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -10,6 +15,7 @@ export const HeaderStyled = styled.header`
   background-color: #213b89;
   color: #f4f5f7;
   padding: calc(8px + 1.5625vw);
+  box-shadow: 0 0 8px #f4f5f7;
 `;
 
 // Navegação
@@ -49,6 +55,12 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   cursor: pointer;
+  width: 100%;
+    
+  &:hover {
+    font-weight: 700;
+    transition: width 0.3s;
+  }
 `;
 
 export const ContainerImage = styled.div`
@@ -109,6 +121,8 @@ export const StyledBurger = styled.div<Props>`
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+    background-color: #fff;
+
     &:nth-child(1) {
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
@@ -131,6 +145,7 @@ export const Ul = styled.ul<Props>`
   display: none;
   text-align: center;
   justify-content: flex-end;
+
   @media (max-width: 768px) {
     display: block;
     flex-flow: column nowrap;

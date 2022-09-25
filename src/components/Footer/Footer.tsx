@@ -15,7 +15,7 @@ export default function Footer() {
     <ContainerFooter>
       <Container>
         {footer.map(({ title, items, medias }: FooterTypes, index) => (
-          <Infos key={title}>
+          <Infos key={`footer-content-${index}`}>
             <Title>{title}</Title>
             <Medias>
               {' '}

@@ -7,6 +7,7 @@ export const Container = styled.section`
   grid-template-columns: repeat(12, 1fr);
   padding: calc(8px + 1.5625vw);
   align-content: center;
+  padding-top: 80px;
 `;
 
 export const Info = styled.div`
@@ -25,10 +26,10 @@ export const Info = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-weight: 300;
+  font-weight: 400;
   font-size: 3.125rem;
   span {
-    font-weight: 500;
+    font-weight: 800;
   }
 
   @media (max-width: 1200px) {
@@ -52,14 +53,14 @@ export const Description = styled.div`
 
 export const Paragraph = styled.p`
   font-weight: 400;
-  font-size: 1.375rem;
+  font-size: 1.1rem;
 
   @media (max-width: 1200px) {
-    font-size: 1.225rem;
+    font-size: 1rem;
   }
 
   @media (max-width: 600px) {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
   }
 `;
 

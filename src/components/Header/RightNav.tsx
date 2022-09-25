@@ -13,10 +13,10 @@ import {
 export default function RightNav({ open }: Props) {
   return (
     <Ul open={open}>
-      {paths.map(({ items, shop, user }: Links) => (
-        <React.Fragment>
+      {paths.map(({ items, shop, user }: Links, index) => (
+        <React.Fragment key={`mobile-nav-${index}`}>
           {items.map((item) => (
-            <LiStyled key={item}>{item}</LiStyled>
+            <LiStyled key={`mobile-nav-${item}`}>{item}</LiStyled>
           ))}
           <ContainerIcon>
             <MobileIcon src={shop} />

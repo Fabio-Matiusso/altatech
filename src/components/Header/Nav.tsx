@@ -23,11 +23,11 @@ export default function Nav() {
           <ContainerImage>
             <Image src={Logo} />
           </ContainerImage>
-          {paths.map(({ items, shop, user }: Links) => (
-            <React.Fragment>
+          {paths.map(({ items, shop, user }: Links, index) => (
+            <React.Fragment key={`web-nav-${index}`}>
               <List>
                 {items.map((item) => (
-                  <ListItem key={item}>{item}</ListItem>
+                  <ListItem key={`web-nav-${item}`}>{item}</ListItem>
                 ))}
               </List>
 

@@ -23,17 +23,17 @@ export default function Services() {
   return (
     <Container>
       <Title>Conheça nossos serviços!</Title>
-      {services.map(({ service, icon }: weOffer) => (
-        <React.Fragment>
-          <SuperiorCard key={service}>
+      {services.map(({ service, icon }: weOffer, index) => (
+        <React.Fragment key={`service-list-${index}`}>
+          <SuperiorCard>
             <Image src={icon} />
             <Text>{service}</Text>
           </SuperiorCard>
         </React.Fragment>
       ))}
       <InferiorCard>
-        {products.map(({ service, icons }: Products) => (
-          <React.Fragment key={service}>
+        {products.map(({ service, icons }: Products, index) => (
+          <React.Fragment key={`service-products-list-${index}`}>
             <Text>{service}</Text>
             <ProductsIcons>
               {!screenTablet.matches &&

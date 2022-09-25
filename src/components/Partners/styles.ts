@@ -22,6 +22,12 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   height: 300px;
+
+  &:hover {
+    opacity: 0.8;
+    transition: width 0.3s;
+  }
+
 `;
 
 export const IconCard = styled.div<Even>`

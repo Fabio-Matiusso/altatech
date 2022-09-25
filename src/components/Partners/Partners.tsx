@@ -22,7 +22,7 @@ export default function Partners() {
               padding: '20px',
               position: 'absolute',
               top: '90px',
-              right: '-60px'
+              right: '-60px',
             },
             prevButtonStyle: {
               padding: '20px',
@@ -30,12 +30,12 @@ export default function Partners() {
               top: '90px',
               left: '-60px',
             },
-            nextButtonText: '🡢',
-            prevButtonText: '🡠',
+            nextButtonText: '->',
+            prevButtonText: '<-',
           }}
         >
           {photos.map((photo, index) => (
-            <Card key={photo}>
+            <Card key={`photo-${index}`}>
               <IconCard isEven={index % 2 === 0 ? even : !even}>
                 <Image src={photo} />
               </IconCard>

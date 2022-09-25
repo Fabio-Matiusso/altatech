@@ -22,9 +22,14 @@ export const SuperiorCard = styled.div`
   align-items: flex-start;
   justify-content: space-evenly;
   background-color: #213b89;
-  border-radius: 30px;
+  border-radius: 8px;
   grid-column: span 3;
   padding: 10px;
+  
+  &:hover {
+    box-shadow: 0 0 15px #213b89;
+    cursor: pointer;
+  }
 
   @media (max-width: 900px) {
     grid-column: span 6;
@@ -45,10 +50,11 @@ export const Image = styled.img`
 
 export const Text = styled.p`
   font-style: normal;
-  font-weight: 300;
   font-size: 1.4rem;
   line-height: 44px;
   color: #f4f5f7;
+  font-weight: 500;
+
 
   @media (max-width: 1200px) {
     font-size: 1.3rem;
@@ -67,8 +73,13 @@ export const InferiorCard = styled.div`
   padding: 0px 30px;
   grid-column: span 12;
   background-color: #213b89;
-  border-radius: 15px;
+  border-radius: 8px;
   height: 120px;
+
+  &:hover {
+    box-shadow: 0 0 15px #213b89;
+    cursor: pointer;
+  }
 
   @media (max-width: 600px) {
     justify-content: space-evenly;
