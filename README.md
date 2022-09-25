@@ -2,11 +2,9 @@
     <h1>Altatech Soluções em Tecnologia Ltda</h1>
 </div>
 
-
 ---
 
 <br>
-
 
 ## Tecnologias utilizadas
 
@@ -22,26 +20,27 @@
 # Rodando a aplicação
 
 ## Para rodar a aplicação, você irá precisar das seguintes ferramentas instaladas em sua máquina
+
 - [GIT](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en/)
 
 ```bash
-# Abra o terminal do seu computador 
+# Abra o terminal do seu computador
 
 # Crie uma pasta para clonar o projeto
 mkdir pasta-teste-pratico
 
-# Acesse essa pasta com o seguinte comando 
+# Acesse essa pasta com o seguinte comando
 cd pasta-teste-pratico
 
 # Clone o repositório dentro da pasta que você criou
-git clone git@github.com:Fabio-Matiusso/altatech.git
+git clone https://github.com/Fabio-Matiusso/altatech.git
 
 # Acesse o projeto
 cd nome-da-pasta-gerada
 
 # Instale as dependências rodando o seguinte comando e apertando enter
-yarn 
+yarn
 
 # Rodar a aplicação
 yarn start
